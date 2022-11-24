@@ -15,7 +15,7 @@
 
 terraform {
   backend "gcs" {
-    bucket = "uri-shared-tool-tfstate"
+    bucket = "uri-terra-dev-tfstate"
     prefix = "env/dev"
   }
 }
