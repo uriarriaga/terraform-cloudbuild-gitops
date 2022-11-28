@@ -27,20 +27,8 @@ resource "google_compute_firewall" "allow-http" {
     ports    = ["80"]
   }
 
-  target_tags   = ["http-server"]
+  target_tags   = ["http-server2"]
   source_ranges = ["0.0.0.0/0"]
 }
 
-resource "google_compute_firewall" "allow-https" {
-  name    = "${local.network}-allow-https"
-  network = "${local.network}"
-  project = "${var.project}"
 
-  allow {
-    protocol = "tcp"
-    ports    = ["443"]
-  }
-
-  target_tags   = ["https-server"]
-  source_ranges = ["0.0.0.0/0"]
-}
