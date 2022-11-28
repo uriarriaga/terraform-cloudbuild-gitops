@@ -1,1 +1,1 @@
-project="uri-shared-tool"
+project="uri-terra-dev"
